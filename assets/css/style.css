@@ -1,0 +1,181 @@
+/* ====================
+   Base
+==================== */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #0f172a;
+    color: #fff;
+    padding-bottom: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ====================
+   Header
+==================== */
+
+.app-header {
+    background: rgba(15,23,42,0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+}
+
+.logo-icon {
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(135deg,#FFD700,#b8860b);
+    border-radius: 50%;
+}
+
+.top-links a {
+    margin-right: 15px;
+    font-size: 14px;
+    opacity: .8;
+}
+
+.top-links a:hover {
+    opacity: 1;
+}
+
+/* ====================
+   Hero
+==================== */
+
+.hero {
+    padding: 60px 20px;
+    background: linear-gradient(160deg,#0f172a,#1e293b);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    opacity: .8;
+    margin-bottom: 25px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg,#FFD700,#c9a227);
+    color: #111;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* ====================
+   Home Cards
+==================== */
+
+.home-cards {
+    padding: 20px;
+    display: grid;
+    gap: 15px;
+}
+
+.home-card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.home-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ====================
+   Bottom Nav
+==================== */
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #111827;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.nav-item {
+    font-size: 13px;
+    opacity: .7;
+}
+
+.nav-item.active {
+    background: linear-gradient(135deg,#FFD700,#c9a227);
+    padding: 8px 12px;
+    border-radius: 20px;
+    color: #111;
+    opacity: 1;
+}
+
+/* ====================
+   Tablet
+==================== */
+
+@media(min-width:768px){
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .home-cards {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .top-links a {
+        font-size: 15px;
+    }
+}
+
+/* ====================
+   Desktop
+==================== */
+
+@media(min-width:1024px){
+
+    .hero {
+        padding: 100px 20px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .bottom-nav {
+        max-width: 600px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        border-radius: 20px 20px 0 0;
+    }
+
+}

@@ -1,0 +1,32 @@
+:root {
+
+    /* Primary Theme */
+    --color-primary: #3f4a23;
+    --color-primary-dark: #2a3118;
+    --color-accent: #d4af37;
+    --color-accent-light: #f1d77a;
+
+
+    /* Backgrounds */
+    --color-bg-main: #f8f6f0;
+    --color-bg-card: #ffffff;
+
+    /* Text */
+    --color-text-main: #222;
+    --color-text-light: #666;
+    --color-text-white: #ffffff;
+
+    /* Borders */
+    --color-border: #e5e5e5;
+
+    /* Radius */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+
+    /* Shadow */
+    --shadow-soft: 0 5px 20px rgba(0,0,0,0.05);
+
+    /* Spacing */
+    --section-padding: 80px 0;
+}

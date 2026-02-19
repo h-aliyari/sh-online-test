@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تست ریسک‌پذیری | شریک آنلاین</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="page-network">
+
+<header class="app-header inner-header">
+    <div class="header-inner">
+
+        <a href="index.html" class="back-btn">← خانه</a>
+
+        <div class="brand">
+            <div class="logo-icon">◉</div>
+            <span>شریک آنلاین</span>
+        </div>
+
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="container">
+        <h1>تست ریسک‌پذیری مالی</h1>
+        <p>به چند سوال پاسخ بده تا سطح ریسک‌پذیریت مشخص بشه</p>
+    </div>
+</section>
+
+<section style="padding:80px 0;">
+    <div class="container">
+
+        <form class="risk-form" id="riskForm">
+
+            <div class="question">
+                <h3>۱. اگر سرمایه شما ۲۰٪ کاهش یابد چه می‌کنید؟</h3>
+                <label><input type="radio" name="q1" value="1"> فوراً خارج می‌شوم</label><br>
+                <label><input type="radio" name="q1" value="2"> صبر می‌کنم</label><br>
+                <label><input type="radio" name="q1" value="3"> سرمایه‌گذاری را افزایش می‌دهم</label>
+            </div>
+
+            <div class="question">
+                <h3>۲. هدف اصلی شما چیست؟</h3>
+                <label><input type="radio" name="q2" value="1"> حفظ سرمایه</label><br>
+                <label><input type="radio" name="q2" value="2"> رشد متوسط</label><br>
+                <label><input type="radio" name="q2" value="3"> رشد حداکثری</label>
+            </div>
+
+            <div class="question">
+                <h3>۳. تجربه شما در سرمایه‌گذاری چقدر است؟</h3>
+                <label><input type="radio" name="q3" value="1"> کم</label><br>
+                <label><input type="radio" name="q3" value="2"> متوسط</label><br>
+                <label><input type="radio" name="q3" value="3"> زیاد</label>
+            </div>
+
+            <button type="submit">مشاهده نتیجه</button>
+
+        </form>
+
+        <div id="resultBox" style="display:none; margin-top:40px; padding:30px; background:white; border-radius:20px; box-shadow:0 5px 20px rgba(0,0,0,0.05);">
+            <h2 id="resultTitle"></h2>
+            <p id="resultText"></p>
+            <a href="advisor.html" class="btn-primary">دریافت پیشنهاد سرمایه‌گذاری</a>
+        </div>
+
+    </div>
+</section>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
